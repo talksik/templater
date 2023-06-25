@@ -2,6 +2,7 @@ use clap::{Parser, ValueEnum};
 
 #[derive(Debug, Parser)]
 #[command(author, version, about, long_about = None)]
+#[command(next_line_help = true)]
 /// Templater is a tool to help you get started quickly configuring cloud apps, libraries,
 /// and frameworks.
 struct Args {
