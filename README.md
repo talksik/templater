@@ -3,6 +3,8 @@
 # What is it
 Download config templates with pragmatic documentation.
 
+No need to go online to find some wanky examples or templates for configuration anymore.
+
 # How does it work?
 ```
 templater yarn-workspace
