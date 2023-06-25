@@ -23,10 +23,18 @@ enum Config {
 fn main() {
     let args = Args::parse();
 
+    let output = args.output_file;
+
     match args.config {
         Config::DigitalOceanApp => {
             let config = std::fs::read_to_string("./src/configs/digitalocean_app_spec.yaml").unwrap();
-            println!("{}", config);
+
+            println!("{}", &config);
+
+            if output {
+                std::fs::write("./digitalocean_app_spec.yaml", &config).unwrap();
+                println!("outputted config to current directory");
+            }
         },
         Config::Kubernetes => println!("lib2"),
         _ => println!("please choose from the following"),
