@@ -1,6 +1,10 @@
 ![racoon logo dreamy pastel colors geometric shape](https://github.com/talksik/templater/assets/19339529/24c60873-09e3-4f4b-8c5d-636700799ac1)
 
 # What is it
+The quickest way to get going with complicated configs.
+
+With noob-friendly comments.
+
 No need to go online to find some wanky examples or templates for configuration anymore. No need to guess and check 100 config options for cloud, library, and app configs that you use.
 
 # How does it work?
