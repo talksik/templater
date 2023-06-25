@@ -1,0 +1,323 @@
+# Official documentation: https://docs.digitalocean.com/products/app-platform/reference/app-spec/
+
+jobs:
+  - envs:
+    - value:
+      scope
+      type
+      key
+    instance_count
+    name
+    image
+        registry_type
+        registry
+        repository
+        tag
+        deploy_on_push
+            enabled
+    dockerfile_path
+    run_command
+    source_dir
+    alerts (array)
+        rule
+        disabled
+        operator
+        value
+        window
+    github
+        repo
+        branch
+        deploy_on_push
+    gitlab
+        repo
+        branch
+        deploy_on_push
+    build_command
+    instance_size_slug
+    log_destinations (array)
+        name
+        papertrail
+            endpoint
+        datadog
+            endpoint
+            api_key
+        logtail
+            token
+    git
+        repo_clone_url
+        branch
+    environment_slug
+    kind
+
+functions (array)
+
+    name
+    source_dir
+    alerts (array)
+        rule
+        disabled
+        operator
+        value
+        window
+    log_destinations (array)
+        name
+        papertrail
+            endpoint
+        datadog
+            endpoint
+            api_key
+        logtail
+            token
+    routes (array)
+        path
+        preserve_path_prefix
+    cors
+        allow_headers (array)
+        expose_headers (array)
+        max_age
+        allow_credentials
+        allow_origins (array)
+            exact
+            prefix
+            regex
+        allow_methods (array)
+    git
+        repo_clone_url
+        branch
+    github
+        repo
+        branch
+        deploy_on_push
+    gitlab
+        repo
+        branch
+        deploy_on_push
+    envs (array)
+        value
+        scope
+        type
+        key
+
+domains (array)
+
+    wildcard
+    zone
+    minimum_tls_version
+    domain
+    type
+
+ingress
+
+    rules (array)
+        match
+            path
+                prefix
+        component
+            name
+            preserve_path_prefix
+            rewrite
+        redirect
+            uri
+            authority
+            port
+            scheme
+            redirect_code
+        cors
+            allow_headers (array)
+            expose_headers (array)
+            max_age
+            allow_credentials
+            allow_origins (array)
+                exact
+                prefix
+                regex
+            allow_methods (array)
+
+databases (array)
+
+    engine
+    version
+    cluster_name
+    db_user
+    name
+    production
+    db_name
+
+region
+envs (array)
+
+    value
+    scope
+    type
+    key
+
+alerts (array)
+
+    rule
+    disabled
+    operator
+    value
+    window
+
+name
+services (array)
+
+    health_check
+        period_seconds
+        timeout_seconds
+        success_threshold
+        failure_threshold
+        http_path
+        port
+        initial_delay_seconds
+    cors
+        allow_headers (array)
+        expose_headers (array)
+        max_age
+        allow_credentials
+        allow_origins (array)
+            exact
+            prefix
+            regex
+        allow_methods (array)
+    log_destinations (array)
+        name
+        papertrail
+            endpoint
+        datadog
+            endpoint
+            api_key
+        logtail
+            token
+    git
+        repo_clone_url
+        branch
+    github
+        repo
+        branch
+        deploy_on_push
+    build_command
+    envs (array)
+        value
+        scope
+        type
+        key
+    source_dir
+    instance_size_slug
+    http_port
+    routes (array)
+        path
+        preserve_path_prefix
+    internal_ports (array)
+    gitlab
+        repo
+        branch
+        deploy_on_push
+    alerts (array)
+        rule
+        disabled
+        operator
+        value
+        window
+    instance_count
+    name
+    image
+        registry_type
+        registry
+        repository
+        tag
+        deploy_on_push
+            enabled
+    dockerfile_path
+    run_command
+    environment_slug
+
+static_sites (array)
+
+    cors
+        allow_headers (array)
+        expose_headers (array)
+        max_age
+        allow_credentials
+        allow_origins (array)
+            exact
+            prefix
+            regex
+        allow_methods (array)
+    catchall_document
+    index_document
+    gitlab
+        repo
+        branch
+        deploy_on_push
+    build_command
+    output_dir
+    github
+        repo
+        branch
+        deploy_on_push
+    environment_slug
+    error_document
+    git
+        repo_clone_url
+        branch
+    dockerfile_path
+    source_dir
+    envs (array)
+        value
+        scope
+        type
+        key
+    routes (array)
+        path
+        preserve_path_prefix
+    name
+
+workers (array)
+
+    git
+        repo_clone_url
+        branch
+    github
+        repo
+        branch
+        deploy_on_push
+    run_command
+    source_dir
+    image
+        registry_type
+        registry
+        repository
+        tag
+        deploy_on_push
+            enabled
+    environment_slug
+    instance_size_slug
+    log_destinations (array)
+        name
+        papertrail
+            endpoint
+        datadog
+            endpoint
+            api_key
+        logtail
+            token
+    gitlab
+        repo
+        branch
+        deploy_on_push
+    dockerfile_path
+    build_command
+    envs (array)
+        value
+        scope
+        type
+        key
+    instance_count
+    alerts (array)
+        rule
+        disabled
+        operator
+        value
+        window
+    name
